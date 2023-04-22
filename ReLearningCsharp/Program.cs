@@ -23,6 +23,9 @@ namespace ReLearningCsharp
             Console.WriteLine(Laura.GetName());
             Laura.setAge(0);
             Console.WriteLine(Laura.GetAge());
+            Console.WriteLine( Laura.getFinalGrade());
+            Laura.setFinalGrade(99);
+            Console.WriteLine(Laura.getFinalGrade());
 
         }
 

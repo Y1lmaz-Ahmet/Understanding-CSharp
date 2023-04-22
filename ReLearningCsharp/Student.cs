@@ -52,5 +52,13 @@ namespace ReLearningCsharp
             }
             return Age;
         }
+        public double setFinalGrade (double newGrade)
+        {
+            return FinalGrade = newGrade;
+        }
+        public double getFinalGrade()
+        {
+            return FinalGrade;
+        }
     }
 }
