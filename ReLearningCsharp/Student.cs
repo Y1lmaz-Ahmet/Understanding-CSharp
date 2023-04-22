@@ -25,8 +25,9 @@ namespace ReLearningCsharp
         }
         public string GetName()
         {
-            if (Name.StartsWith("A") || Name.StartsWith("a")) return Name;
-            return "no data found";
+            if (Age >= 18) return Name;
+            return "sorry, but u have to be 18 or more.";
+            
             
         }
     }
