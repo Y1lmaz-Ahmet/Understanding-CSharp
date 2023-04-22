@@ -8,9 +8,9 @@ namespace ReLearningCsharp
 {
     public class Student
     {
-        private string Name;
-        private int Age;
-        private double FinalGrade;
+        public string Name { get; private set; }
+        public int Age { get; private set; }
+        public double FinalGrade { get; private set; }
 
         public Student(string name,int age,double finalGrade)
         {
@@ -30,35 +30,14 @@ namespace ReLearningCsharp
         }
         public void setName(string newName)
         {
-            if (newName != Name & newName != "") { 
+            if (newName != Name) { 
                 Name = newName;
             
             } else
             {
-                Console.WriteLine("sorry but this name is not correct: {0}",newName);
+                Console.WriteLine("sorry but this name is already binded to this person: {0}",newName);
             }
             
-        }
-        public int GetAge() 
-        {
-            if (Age != 0) return Age;
-            return -1;
-        }
-        public int setAge(int newAge)
-        {
-            if(newAge != 0)
-            {
-                Age = newAge;
-            }
-            return Age;
-        }
-        public double setFinalGrade (double newGrade)
-        {
-            return FinalGrade = newGrade;
-        }
-        public double getFinalGrade()
-        {
-            return FinalGrade;
         }
     }
 }
