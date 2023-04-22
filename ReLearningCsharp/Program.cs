@@ -17,7 +17,9 @@ namespace ReLearningCsharp
             Student femke = new Student("Femke",24);
             Console.WriteLine( femke.GetName());
 
-            Student Laura = new Student("Laura", 17);
+            Student Laura = new Student("Laura", 18);
+            Console.WriteLine(Laura.GetName());
+            Laura.setName("Thomas");
             Console.WriteLine(Laura.GetName());
         }
 
