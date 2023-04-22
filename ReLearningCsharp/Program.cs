@@ -21,6 +21,9 @@ namespace ReLearningCsharp
             Console.WriteLine(Laura.GetName());
             Laura.setName("");
             Console.WriteLine(Laura.GetName());
+            Laura.setAge(0);
+            Console.WriteLine(Laura.GetAge());
+
         }
 
 

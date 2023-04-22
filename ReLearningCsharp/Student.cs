@@ -39,5 +39,18 @@ namespace ReLearningCsharp
             }
             
         }
+        public int GetAge() 
+        {
+            if (Age != 0) return Age;
+            return -1;
+        }
+        public int setAge(int newAge)
+        {
+            if(newAge != 0)
+            {
+                Age = newAge;
+            }
+            return Age;
+        }
     }
 }
