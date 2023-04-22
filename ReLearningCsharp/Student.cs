@@ -30,12 +30,12 @@ namespace ReLearningCsharp
         }
         public void setName(string newName)
         {
-            if (newName != Name) { 
+            if (newName != Name & newName != "") { 
                 Name = newName;
             
             } else
             {
-                Console.WriteLine("sorry but this name is already binded to this person: {0}",newName);
+                Console.WriteLine("sorry but this name is not correct: {0}",newName);
             }
             
         }

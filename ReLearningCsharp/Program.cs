@@ -19,7 +19,7 @@ namespace ReLearningCsharp
 
             Student Laura = new Student("Laura", 18);
             Console.WriteLine(Laura.GetName());
-            Laura.setName("Thomas");
+            Laura.setName("");
             Console.WriteLine(Laura.GetName());
         }
 
