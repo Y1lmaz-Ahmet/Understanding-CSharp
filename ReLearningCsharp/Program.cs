@@ -11,18 +11,25 @@ namespace ReLearningCsharp
         static void Main(string[] args)
         {
 
-            Student ahmet = new Student("Ahmet", 24, 70.50);
-            Console.WriteLine( ahmet.GetName());
+            //Student ahmet = new Student("Ahmet", 24, 70.50);
+            //Console.WriteLine( ahmet.GetName());
 
-            Student femke = new Student("Femke",24);
-            Console.WriteLine( femke.GetName());
+            //Student femke = new Student("Femke",24);
+            //Console.WriteLine( femke.GetName());
 
-            Student Laura = new Student("Laura", 18);
-            Console.WriteLine(Laura.GetName());
-            Laura.setName("Thomas");
-            Console.WriteLine(Laura.GetName());
-            Laura.setName("jan");
-            Console.WriteLine(Laura.GetName());
+            //Student Laura = new Student("Laura", 18);
+            //Console.WriteLine(Laura.GetName());
+            //Laura.setName("Thomas");
+            //Console.WriteLine(Laura.GetName());
+            //Laura.setName("jan");
+            //Console.WriteLine(Laura.GetName());
+
+            BankAccount bank1 = new BankAccount(50, "ahmet");
+            BankAccount bank2 = new BankAccount(150, "atilla");
+
+            BankAccount bank3 = bank1 + bank2;
+            Console.WriteLine(bank3.MoneyOwner);
+            Console.WriteLine(bank3.Money);
 
         }
 
